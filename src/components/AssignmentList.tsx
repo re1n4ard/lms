@@ -6,8 +6,8 @@ import { FileText, Calendar, Clock, Upload } from "lucide-react";
 const assignments = [
   {
     id: 1,
-    title: "HTML/CSS Portfolio Page",
-    subject: "Web Development Fundamentals",
+    title: "MERN Stack Project",
+    subject: "Full Stack Development",
     dueDate: "Tomorrow",
     timeLeft: "1 day",
     status: "pending",
@@ -16,18 +16,18 @@ const assignments = [
   },
   {
     id: 2,
-    title: "JavaScript Calculator",
-    subject: "JavaScript Programming", 
+    title: "Binary Search Trees Implementation",
+    subject: "Data Structures", 
     dueDate: "Jan 18",
     timeLeft: "3 days",
     status: "in-progress",
     priority: "high",
-    type: "Project"
+    type: "Assignment"
   },
   {
     id: 3,
-    title: "Form Validation",
-    subject: "Web Development Fundamentals",
+    title: "OOP Concepts - Java",
+    subject: "Programming Paradigms",
     dueDate: "Jan 12",
     timeLeft: "completed",
     status: "submitted",
@@ -36,8 +36,8 @@ const assignments = [
   },
   {
     id: 4,
-    title: "React Component Library",
-    subject: "Front-End with ReactJS",
+    title: "API Development with Node.js",
+    subject: "Full Stack Development",
     dueDate: "Jan 25",
     timeLeft: "1 week",
     status: "pending",
@@ -46,23 +46,23 @@ const assignments = [
   },
   {
     id: 5,
-    title: "DOM Manipulation",
-    subject: "JavaScript Programming",
+    title: "Graph Algorithms",
+    subject: "Data Structures",
     dueDate: "Jan 20",
     timeLeft: "5 days",
     status: "pending",
     priority: "low",
-    type: "Exercise"
+    type: "Assignment"
   },
   {
     id: 6,
-    title: "CSS Grid Layout",
-    subject: "Web Development Fundamentals",
+    title: "Functional Programming Lab",
+    subject: "Programming Paradigms",
     dueDate: "Jan 14",
     timeLeft: "2 days",
     status: "in-progress",
     priority: "medium",
-    type: "Project"
+    type: "Lab"
   }
 ];
 

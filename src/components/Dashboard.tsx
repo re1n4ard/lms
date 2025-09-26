@@ -177,15 +177,22 @@ export default function Dashboard() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between p-3 rounded-lg bg-secondary/10">
                     <div>
-                      <p className="font-medium">JavaScript Programming</p>
-                      <p className="text-sm text-muted-foreground">10:00 AM - Room 201</p>
+                      <p className="font-medium">Full Stack Development</p>
+                      <p className="text-sm text-muted-foreground">2:00 PM - Room 305</p>
                     </div>
-                    <Badge variant="secondary">Tomorrow</Badge>
+                    <Badge variant="secondary">Today</Badge>
                   </div>
                   <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
                     <div>
-                      <p className="font-medium">ReactJS Workshop</p>
-                      <p className="text-sm text-muted-foreground">1:30 PM - Lab 105</p>
+                      <p className="font-medium">Data Structures</p>
+                      <p className="text-sm text-muted-foreground">10:00 AM - Lab 201</p>
+                    </div>
+                    <Badge variant="outline">Tomorrow</Badge>
+                  </div>
+                  <div className="flex items-center justify-between p-3 rounded-lg bg-accent/10">
+                    <div>
+                      <p className="font-medium">Programming Paradigms</p>
+                      <p className="text-sm text-muted-foreground">1:30 PM - Room 102</p>
                     </div>
                     <Badge variant="outline">Friday</Badge>
                   </div>
