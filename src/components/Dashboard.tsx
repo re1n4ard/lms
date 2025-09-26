@@ -61,27 +61,20 @@ const stats = [
     value: "63%",
     icon: TrendingUp,
     color: "primary",
-    description: "Across all 3 units"
+    description: "Across all 3 subjects"
   },
   {
-    title: "Assignments Done", 
-    value: "4/6",
-    icon: ClipboardCheck,
+    title: "Attendance",
+    value: "92%",
+    icon: Users,
     color: "secondary",
     description: "This semester"
-  },
-  {
-    title: "Units Completed",
-    value: "1.5/3",
-    icon: BookOpen,
-    color: "accent",
-    description: "Full Stack Course"
   },
   {
     title: "Study Hours",
     value: "24h",
     icon: Clock,
-    color: "purple",
+    color: "accent",
     description: "This week"
   }
 ];
