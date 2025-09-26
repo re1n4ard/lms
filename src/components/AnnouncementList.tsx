@@ -5,32 +5,32 @@ import { Clock, Pin } from "lucide-react";
 const announcements = [
   {
     id: 1,
-    title: "Midterm Schedule Released",
-    content: "Check your student portal for the complete midterm examination schedule.",
-    author: "Academic Office",
-    authorInitials: "AO",
+    title: "New React Tutorial Videos",
+    content: "Check out the latest React component tutorials on the course portal. Perfect for Unit 3 preparation!",
+    author: "Prof. Chen",
+    authorInitials: "PC",
     time: "2 hours ago",
-    priority: "high",
+    priority: "medium",
     pinned: true,
     category: "Academic"
   },
   {
     id: 2,
-    title: "Library Hours Extended",
-    content: "The library will remain open until midnight during finals week.",
-    author: "Library Staff",
-    authorInitials: "LS",
+    title: "JavaScript Quiz Next Week",
+    content: "Unit 2 assessment covering functions, arrays, and DOM manipulation. Review materials posted online.",
+    author: "Dr. Martinez",
+    authorInitials: "DM",
     time: "1 day ago", 
-    priority: "medium",
-    pinned: false,
-    category: "Facility"
+    priority: "high",
+    pinned: true,
+    category: "Academic"
   },
   {
     id: 3,
-    title: "Guest Lecture: AI in Education",
-    content: "Join us for an exciting guest lecture on AI applications in modern education.",
-    author: "Dr. Sarah Johnson",
-    authorInitials: "SJ",
+    title: "CSS Grid Workshop",
+    content: "Industry expert will demonstrate advanced CSS Grid techniques on Friday at 2 PM in Lab 201.",
+    author: "Guest Speaker",
+    authorInitials: "GS",
     time: "2 days ago",
     priority: "low",
     pinned: false,
@@ -38,13 +38,13 @@ const announcements = [
   },
   {
     id: 4,
-    title: "Assignment Deadline Extension",
-    content: "The Computer Science project deadline has been extended by 48 hours.",
-    author: "Prof. Michael Chen",
-    authorInitials: "MC",
+    title: "Office Hours Extended",
+    content: "Instructor office hours now include Saturday mornings for extra JavaScript and React help.",
+    author: "Prof. Anderson",
+    authorInitials: "PA",
     time: "3 days ago",
     priority: "medium",
-    pinned: true,
+    pinned: false,
     category: "Academic"
   }
 ];

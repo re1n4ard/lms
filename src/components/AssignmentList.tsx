@@ -6,19 +6,19 @@ import { FileText, Calendar, Clock, Upload } from "lucide-react";
 const assignments = [
   {
     id: 1,
-    title: "Calculus Problem Set #7",
-    subject: "Mathematics",
+    title: "HTML/CSS Portfolio Page",
+    subject: "Web Development Fundamentals",
     dueDate: "Tomorrow",
     timeLeft: "1 day",
     status: "pending",
     priority: "high",
-    type: "Problem Set"
+    type: "Project"
   },
   {
     id: 2,
-    title: "Data Structures Project",
-    subject: "Computer Science", 
-    dueDate: "Oct 28",
+    title: "JavaScript Calculator",
+    subject: "JavaScript Programming", 
+    dueDate: "Jan 18",
     timeLeft: "3 days",
     status: "in-progress",
     priority: "high",
@@ -26,23 +26,43 @@ const assignments = [
   },
   {
     id: 3,
-    title: "Newton's Laws Essay",
-    subject: "Physics",
-    dueDate: "Nov 2",
-    timeLeft: "1 week",
-    status: "pending",
+    title: "Form Validation",
+    subject: "Web Development Fundamentals",
+    dueDate: "Jan 12",
+    timeLeft: "completed",
+    status: "submitted",
     priority: "medium",
-    type: "Essay"
+    type: "Exercise"
   },
   {
     id: 4,
-    title: "Shakespeare Analysis",
-    subject: "Literature",
-    dueDate: "Nov 5",
+    title: "React Component Library",
+    subject: "Front-End with ReactJS",
+    dueDate: "Jan 25",
     timeLeft: "1 week",
-    status: "submitted",
+    status: "pending",
+    priority: "medium",
+    type: "Project"
+  },
+  {
+    id: 5,
+    title: "DOM Manipulation",
+    subject: "JavaScript Programming",
+    dueDate: "Jan 20",
+    timeLeft: "5 days",
+    status: "pending",
     priority: "low",
-    type: "Analysis"
+    type: "Exercise"
+  },
+  {
+    id: 6,
+    title: "CSS Grid Layout",
+    subject: "Web Development Fundamentals",
+    dueDate: "Jan 14",
+    timeLeft: "2 days",
+    status: "in-progress",
+    priority: "medium",
+    type: "Project"
   }
 ];
 

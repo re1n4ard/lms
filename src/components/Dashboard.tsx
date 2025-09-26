@@ -19,79 +19,67 @@ import AnnouncementList from "./AnnouncementList";
 const subjects = [
   {
     id: 1,
-    name: "Mathematics",
-    instructor: "Dr. Sarah Johnson",
-    progress: 78,
+    name: "Web Development Fundamentals",
+    instructor: "Prof. Anderson",
+    progress: 85,
     color: "primary",
-    totalLessons: 24,
-    completedLessons: 18,
-    nextClass: "Tomorrow at 10:00 AM",
-    assignments: 3,
+    totalLessons: 8,
+    completedLessons: 7,
+    nextClass: "Today at 2:00 PM",
+    assignments: 2,
     grade: "A-"
   },
   {
     id: 2,
-    name: "Computer Science",
-    instructor: "Prof. Michael Chen",
-    progress: 92,
-    color: "secondary",
-    totalLessons: 20,
-    completedLessons: 18,
-    nextClass: "Today at 2:00 PM",
-    assignments: 1,
-    grade: "A+"
-  },
-  {
-    id: 3,
-    name: "Physics",
-    instructor: "Dr. Elena Rodriguez",
+    name: "JavaScript Programming",
+    instructor: "Dr. Martinez",
     progress: 65,
-    color: "accent",
-    totalLessons: 22,
-    completedLessons: 14,
-    nextClass: "Wednesday at 9:00 AM",
-    assignments: 5,
+    color: "secondary", 
+    totalLessons: 8,
+    completedLessons: 5,
+    nextClass: "Tomorrow at 10:00 AM",
+    assignments: 3,
     grade: "B+"
   },
   {
-    id: 4,
-    name: "Literature",
-    instructor: "Ms. Amanda Wright",
-    progress: 88,
-    color: "purple",
-    totalLessons: 18,
-    completedLessons: 16,
-    nextClass: "Friday at 11:00 AM",
-    assignments: 2,
-    grade: "A"
+    id: 3,
+    name: "Front-End with ReactJS",
+    instructor: "Prof. Chen",
+    progress: 40,
+    color: "accent",
+    totalLessons: 8,
+    completedLessons: 3,
+    nextClass: "Friday at 1:30 PM",
+    assignments: 1,
+    grade: "B"
   }
 ];
 
 const stats = [
   {
-    title: "Overall Progress",
-    value: "81%",
+    title: "Course Progress",
+    value: "63%",
     icon: TrendingUp,
     color: "primary",
-    description: "Across all subjects"
+    description: "Across all 3 units"
   },
   {
-    title: "Attendance Rate",
-    value: "94%",
-    icon: Users,
+    title: "Assignments Done", 
+    value: "4/6",
+    icon: ClipboardCheck,
     color: "secondary",
     description: "This semester"
   },
   {
-    title: "Assignments Due",
-    value: "11",
-    icon: ClipboardCheck,
+    title: "Units Completed",
+    value: "1.5/3",
+    icon: BookOpen,
     color: "accent",
-    description: "Next 7 days"
+    description: "Full Stack Course"
   },
   {
     title: "Study Hours",
-    value: "42h",
+    value: "24h",
     icon: Clock,
     color: "purple",
     description: "This week"
@@ -107,10 +95,10 @@ export default function Dashboard() {
           <div className="flex items-center justify-between mb-4">
             <div>
               <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Welcome back, Alex!
+                Full Stack Development Course
               </h1>
               <p className="text-lg text-muted-foreground mt-2">
-                Ready to continue your learning journey?
+                Master HTML, CSS, JavaScript, and React - Units 1-3
               </p>
             </div>
             <div className="flex items-center gap-4">
@@ -155,11 +143,11 @@ export default function Dashboard() {
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-semibold flex items-center">
                 <BookOpen className="h-6 w-6 mr-2 text-primary" />
-                Your Subjects
+                Your Course Units
               </h2>
               <Button variant="outline">View All</Button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               {subjects.map((subject) => (
                 <SubjectCard key={subject.id} subject={subject} />
               ))}
@@ -169,7 +157,7 @@ export default function Dashboard() {
             <div className="mt-8">
               <h2 className="text-2xl font-semibold flex items-center mb-6">
                 <ClipboardCheck className="h-6 w-6 mr-2 text-accent" />
-                Recent Assignments
+                Current Assignments
               </h2>
               <AssignmentList />
             </div>
@@ -189,17 +177,17 @@ export default function Dashboard() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between p-3 rounded-lg bg-secondary/10">
                     <div>
-                      <p className="font-medium">Computer Science</p>
-                      <p className="text-sm text-muted-foreground">2:00 PM - Room 301</p>
+                      <p className="font-medium">JavaScript Programming</p>
+                      <p className="text-sm text-muted-foreground">10:00 AM - Room 201</p>
                     </div>
-                    <Badge variant="secondary">Soon</Badge>
+                    <Badge variant="secondary">Tomorrow</Badge>
                   </div>
                   <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
                     <div>
-                      <p className="font-medium">Study Group</p>
-                      <p className="text-sm text-muted-foreground">4:00 PM - Library</p>
+                      <p className="font-medium">ReactJS Workshop</p>
+                      <p className="text-sm text-muted-foreground">1:30 PM - Lab 105</p>
                     </div>
-                    <Badge variant="outline">Optional</Badge>
+                    <Badge variant="outline">Friday</Badge>
                   </div>
                 </div>
               </CardContent>
