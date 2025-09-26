@@ -19,8 +19,8 @@ import AnnouncementList from "./AnnouncementList";
 const subjects = [
   {
     id: 1,
-    name: "Web Development Fundamentals",
-    instructor: "Prof. Anderson",
+    name: "Full Stack Development",
+    instructor: "Prof. Amol Kamble",
     progress: 85,
     color: "primary",
     totalLessons: 8,
@@ -31,8 +31,8 @@ const subjects = [
   },
   {
     id: 2,
-    name: "JavaScript Programming",
-    instructor: "Dr. Martinez",
+    name: "Data Structures",
+    instructor: "Dr. Sashikala Mishra",
     progress: 65,
     color: "secondary", 
     totalLessons: 8,
@@ -43,8 +43,8 @@ const subjects = [
   },
   {
     id: 3,
-    name: "Front-End with ReactJS",
-    instructor: "Prof. Chen",
+    name: "Programming Paradigms",
+    instructor: "Dr. Shwetambari Chiwhane",
     progress: 40,
     color: "accent",
     totalLessons: 8,
