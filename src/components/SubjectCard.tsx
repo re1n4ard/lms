@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Calendar, FileText, User, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 
 interface Subject {
@@ -22,6 +23,7 @@ interface SubjectCardProps {
 }
 
 export default function SubjectCard({ subject }: SubjectCardProps) {
+  const navigate = useNavigate();
   const getColorClasses = (color: string) => {
     const colorMap = {
       primary: "gradient-primary",
@@ -43,7 +45,12 @@ export default function SubjectCard({ subject }: SubjectCardProps) {
   };
 
   return (
-    <Card className="gradient-card border-0 shadow-card hover:shadow-glow transition-all duration-300 group cursor-pointer transform hover:-translate-y-2 animate-fade-in">
+    <Card
+      onClick={() => navigate(`/subjects`)}
+      role="button"
+      tabIndex={0}
+      className="gradient-card border-0 shadow-card hover:shadow-glow transition-all duration-300 group cursor-pointer transform hover:-translate-y-2 animate-fade-in"
+    >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
           <div className="space-y-1">

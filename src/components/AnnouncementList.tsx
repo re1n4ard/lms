@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Clock, Pin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const announcements = [
   {
@@ -50,6 +51,7 @@ const announcements = [
 ];
 
 export default function AnnouncementList() {
+  const navigate = useNavigate();
   const getPriorityColor = (priority: string) => {
     const colorMap = {
       high: "destructive",
@@ -73,6 +75,7 @@ export default function AnnouncementList() {
       {announcements.map((announcement) => (
         <div 
           key={announcement.id}
+          onClick={() => navigate('/announcements')}
           className="p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-all duration-200 space-y-3 group cursor-pointer border border-transparent hover:border-primary/10"
         >
           {/* Header */}

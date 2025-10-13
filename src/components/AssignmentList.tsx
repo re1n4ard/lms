@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, Calendar, Clock, Upload } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const assignments = [
   {
@@ -67,6 +68,7 @@ const assignments = [
 ];
 
 export default function AssignmentList() {
+  const navigate = useNavigate();
   const getStatusColor = (status: string) => {
     const statusMap = {
       pending: "warning",
@@ -101,7 +103,8 @@ export default function AssignmentList() {
       {assignments.map((assignment) => (
         <Card 
           key={assignment.id} 
-          className="gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 group"
+          onClick={() => navigate('/assignments')}
+          className="gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 group cursor-pointer"
         >
           <CardContent className="p-4">
             <div className="flex items-start justify-between">
@@ -143,18 +146,18 @@ export default function AssignmentList() {
 
               <div className="ml-4">
                 {assignment.status === "pending" && (
-                  <Button size="sm" className="gradient-primary">
+                  <Button size="sm" className="gradient-primary" onClick={() => navigate('/assignments')}>
                     <Upload className="h-3 w-3 mr-1" />
                     Submit
                   </Button>
                 )}
                 {assignment.status === "in-progress" && (
-                  <Button size="sm" variant="secondary">
+                  <Button size="sm" variant="secondary" onClick={() => navigate('/assignments')}>
                     Continue
                   </Button>
                 )}
                 {assignment.status === "submitted" && (
-                  <Button size="sm" variant="outline">
+                  <Button size="sm" variant="outline" onClick={() => navigate('/assignments')}>
                     View
                   </Button>
                 )}

@@ -11,6 +11,7 @@ import {
   Clock,
   Award
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import SubjectCard from "./SubjectCard";
 import ProgressBar from "./ProgressBar";
 import AssignmentList from "./AssignmentList";
@@ -95,15 +96,19 @@ export default function Dashboard() {
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <Button variant="outline" size="icon" className="relative">
-                <Bell className="h-4 w-4" />
-                <Badge className="absolute -top-2 -right-2 h-5 w-5 p-0 flex items-center justify-center bg-accent">
-                  3
-                </Badge>
+              <Button variant="outline" size="icon" className="relative" asChild>
+                <Link to="/announcements" aria-label="Open announcements">
+                  <Bell className="h-4 w-4" />
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 p-0 flex items-center justify-center bg-accent">
+                    3
+                  </Badge>
+                </Link>
               </Button>
-              <Button className="gradient-primary">
-                <Award className="h-4 w-4 mr-2" />
-                View Achievements
+              <Button className="gradient-primary" asChild>
+                <Link to="/achievements" aria-label="View achievements">
+                  <Award className="h-4 w-4 mr-2" />
+                  View Achievements
+                </Link>
               </Button>
             </div>
           </div>
@@ -138,7 +143,9 @@ export default function Dashboard() {
                 <BookOpen className="h-6 w-6 mr-2 text-primary" />
                 Your Course Units
               </h2>
-              <Button variant="outline">View All</Button>
+              <Button variant="outline" asChild>
+                <Link to="/subjects" aria-label="View all subjects">View All</Link>
+              </Button>
             </div>
             <div className="grid grid-cols-1 gap-6">
               {subjects.map((subject) => (
