@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import SubjectCard from "@/components/SubjectCard";
+import Navbar from "@/components/Navbar";
 
 const subjects = [
   {
@@ -48,14 +49,17 @@ const Subjects = () => {
   }, []);
 
   return (
-    <main className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">All Subjects</h1>
-      <section className="grid grid-cols-1 gap-6">
-        {subjects.map((subject) => (
-          <SubjectCard key={subject.id} subject={subject} />
-        ))}
-      </section>
-    </main>
+    <>
+      <Navbar />
+      <main className="max-w-7xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-6">All Subjects</h1>
+        <section className="grid grid-cols-1 gap-6">
+          {subjects.map((subject) => (
+            <SubjectCard key={subject.id} subject={subject} />
+          ))}
+        </section>
+      </main>
+    </>
   );
 };
 

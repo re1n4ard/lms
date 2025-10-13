@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AnnouncementList from "@/components/AnnouncementList";
+import Navbar from "@/components/Navbar";
 
 const Announcements = () => {
   useEffect(() => {
@@ -9,10 +10,13 @@ const Announcements = () => {
   }, []);
 
   return (
-    <main className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Announcements</h1>
-      <AnnouncementList />
-    </main>
+    <>
+      <Navbar />
+      <main className="max-w-7xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-6">Announcements</h1>
+        <AnnouncementList />
+      </main>
+    </>
   );
 };
 
