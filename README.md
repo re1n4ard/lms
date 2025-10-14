@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# Intuitive Learning Management System (A New Moodle)
 
-## Project info
+**URL**: https://github.com/re1n4ard/lms
 
-**URL**: https://lovable.dev/projects/0272ec5f-c18d-4f1d-8cd4-f42a130357df
+## Group Members
 
-## How can I edit this code?
+Pratham Parag Zade - 24070122140
 
-There are several ways of editing your application.
+Reinhard Nadar - 24070122155
 
-**Use Lovable**
+Rohan Seiman - 24070122158
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0272ec5f-c18d-4f1d-8cd4-f42a130357df) and start prompting.
+Sameer Karkal - 24070122164
 
-Changes made via Lovable will be committed automatically to this repo.
+## Problem Statement
 
-**Use your preferred IDE**
+The need for a good interface in an LMS platform like Moodle is critical, as it directly impacts the two most important factors: engagement and learning efficiency.
+Moodle's UI is bland and lifeless. It is also inconvenient as you have to poke around to find exactly what you neeed. Through our web app, we intend to create a user-friendly experience, which drives motivation and productivity.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**1. Maximizing Learning Efficiency**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A strong UI minimizes cognitive load, ensuring students spend their mental energy on absorbing the course material rather than struggling to figure out how to operate a clunky platform. This direct focus maximizes learning retention and speed.
 
-Follow these steps:
+**2. Driving Engagement and Motivation**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Vibrant, modern aesthetics and intuitive flows transform the LMS from a frustrating chore into an encouraging and rewarding space. This positive experience is key to driving consistent student return rates and overall course engagement.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**3. Improving Operational Productivity**
 
-# Step 3: Install the necessary dependencies.
-npm i
+Streamlined tools, like drag-and-drop course editors and simplified grading interfaces, drastically reduce the administrative burden on instructors. By saving time on management tasks, educators can focus their efforts entirely on improving curriculum quality and providing better feedback.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**This project is built with:**
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+- HTML
+- CSS
 - Vite
-- TypeScript
+- JavaScript
 - React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0272ec5f-c18d-4f1d-8cd4-f42a130357df) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
