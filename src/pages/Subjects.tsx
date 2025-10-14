@@ -13,7 +13,7 @@ const subjects = [
     completedLessons: 7,
     nextClass: "Today at 2:00 PM",
     assignments: 2,
-    grade: "A-",
+    grade: "A",
   },
   {
     id: 2,

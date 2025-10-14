@@ -88,11 +88,11 @@ export default function Dashboard() {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Full Stack Development Course
+              <h1 className="text-4xl font-bold text-blue-500">
+                Welcome Rohan!
               </h1>
               <p className="text-lg text-muted-foreground mt-2">
-                Master HTML, CSS, JavaScript, and React - Units 1-3
+                
               </p>
             </div>
             <div className="flex items-center gap-4">
