@@ -3,6 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Reinhard Nadar <reinhardnadar862@gmail.com>",
+  "contributors": [
+    "Rohan Seiman <rohanseiman@gmail.com>",
+    "Sameer Karkal <sameerkarkal.26@gmail.com>",
+    "Pratham Zade <prathamzade06@gmail.com>"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
